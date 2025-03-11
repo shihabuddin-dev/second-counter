@@ -15,7 +15,7 @@ function updateTimer() {
 startBtn.addEventListener('click', () => {
     if (!isRunning) {
         isRunning = true;
-        timerInterval = setInterval(updateTimer, 1000); // Update every second
+        timerInterval = setInterval(updateTimer, 1000);
     }
 });
 
