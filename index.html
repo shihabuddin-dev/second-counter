@@ -1,11 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Count Second</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {},
+            },
+        };
+    </script>
 </head>
-<body>
+
+<body class="bg-gray-100 flex items-center justify-center h-screen font-serif">
+    <div class="bg-white p-4 sm:p-8 rounded-lg shadow-lg text-center w-full max-w-sm">
+        <h1 class="text-xl sm:text-2xl font-bold mb-4">Second Counter</h1>
+        <div id="timer" class="text-3xl sm:text-4xl font-mono mb-6 ">0</div>
+        <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center">
+            <button id="startBtn" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Start</button>
+            <button id="stopBtn" class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">Stop</button>
+            <button id="clearBtn" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Clear</button>
+        </div>
+    </div>
     <script src="script.js"></script>
+
 </body>
+
 </html>
